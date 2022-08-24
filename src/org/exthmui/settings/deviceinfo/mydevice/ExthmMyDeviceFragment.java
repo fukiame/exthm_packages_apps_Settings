@@ -6,7 +6,6 @@ import android.content.Intent;
 
 import com.android.settings.R;
 import com.android.settings.dashboard.DashboardFragment;
-import com.android.settings.deviceinfo.BuildNumberPreferenceController;
 import com.android.settings.deviceinfo.DeviceNamePreferenceController;
 import com.android.settings.deviceinfo.aboutphone.DeviceNameWarningDialog;
 import com.android.settings.search.BaseSearchIndexProvider;
@@ -25,7 +24,7 @@ public class ExthmMyDeviceFragment extends DashboardFragment
 
     private static final String LOG_TAG = "ExthmMyDeviceFragment";
 
-    private BuildNumberPreferenceController mBuildNumberPreferenceController;
+    private ExthmDisplayVersionPreferenceController mExthmDisplayVersionPreferenceController;
 
     @Override
     public int getMetricsCategory() {
@@ -41,8 +40,8 @@ public class ExthmMyDeviceFragment extends DashboardFragment
     public void onAttach(Context context) {
         super.onAttach(context);
         use(DeviceNamePreferenceController.class).setHost(this /* parent */);
-        mBuildNumberPreferenceController = use(BuildNumberPreferenceController.class);
-        mBuildNumberPreferenceController.setHost(this /* parent */);
+        mExthmDisplayVersionPreferenceController = use(ExthmDisplayVersionPreferenceController.class);
+        mExthmDisplayVersionPreferenceController.setHost(this /* parent */);
     }
 
     @Override
@@ -61,14 +60,14 @@ public class ExthmMyDeviceFragment extends DashboardFragment
     }
 
     private static List<AbstractPreferenceController> buildPreferenceControllers(
-            Context context, ModMyDeviceFragment fragment, Lifecycle lifecycle) {
+            Context context, ExthmMyDeviceFragment fragment, Lifecycle lifecycle) {
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
         return controllers;
     }
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (mBuildNumberPreferenceController.onActivityResult(requestCode, resultCode, data)) {
+        if (mExthmDisplayVersionPreferenceController.onActivityResult(requestCode, resultCode, data)) {
             return;
         }
         super.onActivityResult(requestCode, resultCode, data);
