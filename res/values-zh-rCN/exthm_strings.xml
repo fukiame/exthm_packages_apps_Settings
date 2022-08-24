@@ -17,4 +17,17 @@
     <string name="min_refresh_rate_title">最小刷新率</string>
     <string name="max_refresh_rate_title">最大刷新率</string>
 
+    <!-- My Device -->
+    <string name="exthm_settings_my_device_title">我的设备</string>
+    <string name="exthm_settings_my_device_exthm_version_title">exTHmUI 版本</string>
+    <string name="exthm_settings_my_device_display_version_title">版本号</string>
+    <string name="exthm_settings_my_device_processor_title">处理器</string>
+    <string name="exthm_settings_my_device_ram_title">运行内存</string>
+    <string name="exthm_settings_my_device_storage_title">存储空间</string>
+    <string name="exthm_settings_my_device_storage_regex">已用 %1$s / %2$s</string>
+
+    <!-- SOC Manufacture -->
+    <string name="soc_model_qualcomm">高通</string>
+    <string name="soc_model_mediatek">联发科</string>
+
 </resources>

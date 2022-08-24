@@ -195,11 +195,11 @@
         settings:highlightableMenuKey="@string/menu_key_system"/>
 
     <com.android.settings.widget.HomepagePreference
-        android:fragment="com.android.settings.deviceinfo.aboutphone.MyDeviceInfoFragment"
+        android:fragment="org.exthmui.settings.deviceinfo.mydevice.ExthmMyDeviceFragment"
         android:icon="@drawable/ic_settings_about_device"
         android:key="top_level_about_device"
         android:order="20"
-        android:title="@string/about_settings"
+        android:title="@string/exthm_settings_my_device_title"
         android:summary="@string/summary_placeholder"
         settings:highlightableMenuKey="@string/menu_key_about_device"
         settings:controller="com.android.settings.deviceinfo.aboutphone.TopLevelAboutDevicePreferenceController"/>
