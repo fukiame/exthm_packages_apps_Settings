@@ -48,6 +48,10 @@ public class ExthmVersionDetailPreferenceController extends BasePreferenceContro
 
     private static final String KEY_EXTHM_VERSION_PROP = "ro.exthm.build.version";
 
+    private static final String KEY_EXTHM_BRANCH_PROP = "ro.exthm.branch";
+
+    private static final String KEY_EXTHM_BUILD_TYPE_PROP = "ro.exthm.build.type";
+
     private final UserManager mUserManager;
     private final long[] mHits = new long[ACTIVITY_TRIGGER_COUNT];
 
@@ -70,8 +74,9 @@ public class ExthmVersionDetailPreferenceController extends BasePreferenceContro
 
     @Override
     public CharSequence getSummary() {
-	return SystemProperties.get(KEY_EXTHM_VERSION_PROP,
-                mContext.getString(R.string.unknown));
+	return SystemProperties.get(KEY_EXTHM_VERSION_PROP, mContext.getString(R.string.unknown))+ " | " 
+        + SystemProperties.get(KEY_EXTHM_BRANCH_PROP, mContext.getString(R.string.unknown)).toUpperCase() + " | " 
+        + SystemProperties.get(KEY_EXTHM_BUILD_TYPE_PROP, mContext.getString(R.string.unknown)).toUpperCase();
     }
 
     @Override
