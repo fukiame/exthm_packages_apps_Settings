@@ -68,6 +68,7 @@ public class ExthmHardwareInfoPreferenceController extends BasePreferenceControl
         }
         switch (socManufacture.toLowerCase(Locale.ROOT)) {
             case "qualcomm":
+            case  "qti":
                 socManufacture = mContext.getString(R.string.soc_model_qualcomm);
                 break;
             case "mediatek":
