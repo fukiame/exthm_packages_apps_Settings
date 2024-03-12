@@ -154,7 +154,7 @@ public class MobileNetworkSummaryController extends AbstractPreferenceController
         refreshSummary(mPreference);
         mPreference.setOnPreferenceClickListener(null);
         mPreference.setFragment(null);
-        mPreference.setEnabled(!mIsAirplaneModeOn);
+        mPreference.setEnabled(true);
     }
 
     private void update() {
@@ -197,7 +197,6 @@ public class MobileNetworkSummaryController extends AbstractPreferenceController
     public void onAirplaneModeChanged(boolean airplaneModeEnabled) {
         if (mIsAirplaneModeOn != airplaneModeEnabled) {
             mIsAirplaneModeOn = airplaneModeEnabled;
-            update();
         }
     }
 
