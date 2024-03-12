@@ -13,4 +13,7 @@
     <!-- exTHmUI Version -->
     <string name="exthm_version">exTHmUI 版本</string>
 
+    <!-- Refresh rate -->
+    <string name="refresh_rate_title">屏幕刷新率</string>
+
 </resources>
