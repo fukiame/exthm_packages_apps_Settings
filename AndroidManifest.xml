@@ -3789,11 +3789,9 @@
 
         <!-- Show regulatory info (from settings item or dialing "*#07#") -->
         <activity
-            android:name="RegulatoryInfoDisplayActivity"
-            android:theme="@style/Theme.AlertDialog"
+            android:name="org.exthmui.settings.RegulatoryInfoDisplayActivity"
             android:label="@string/regulatory_labels"
-            android:exported="true"
-            android:enabled="@bool/config_show_regulatory_info">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.settings.SHOW_REGULATORY_INFO" />
                 <category android:name="android.intent.category.BROWSABLE" />

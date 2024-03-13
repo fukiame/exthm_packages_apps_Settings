@@ -90,6 +90,13 @@
         android:key="legal_container"
         android:title="@string/legal_information" />
 
+    <!-- Regulatory labels -->
+    <Preference
+        android:key="regulatory_info"
+        android:title="@string/regulatory_labels">
+        <intent android:action="android.settings.SHOW_REGULATORY_INFO"/>
+    </Preference>
+
     <!-- Status info -->
     <Preference
         android:fragment="org.exthmui.settings.deviceinfo.statusinfo.ExthmStatusInfoFragment"
