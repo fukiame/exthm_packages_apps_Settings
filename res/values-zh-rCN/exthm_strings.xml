@@ -28,6 +28,5 @@
 
     <!-- SOC Manufacture -->
     <string name="soc_model_qualcomm">高通</string>
-    <string name="soc_model_mediatek">联发科</string>
 
 </resources>

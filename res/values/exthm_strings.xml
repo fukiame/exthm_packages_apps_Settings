@@ -28,6 +28,6 @@
 
     <!-- SOC Manufacture -->
     <string name="soc_model_qualcomm">Qualcomm</string>
-    <string name="soc_model_mediatek">Mediatek</string>
+    <string name="soc_model_mediatek" translatable="false">MTK</string>
 
 </resources>
