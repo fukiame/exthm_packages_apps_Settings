@@ -1,6 +1,7 @@
 package org.exthmui.settings.deviceinfo.hardwareinfo;
 
 import android.content.Context;
+import android.os.Build;
 import android.os.Environment;
 import android.os.StatFs;
 import android.os.UserHandle;
@@ -59,7 +60,11 @@ public class ExthmHardwareInfoPreferenceController extends BasePreferenceControl
         String socManufacture = ExthmDeviceUtils.getSocManufacture();
         String socModel = ExthmDeviceUtils.getSocModel();
         if (socManufacture == null && socModel == null) {
-            return mContext.getString(R.string.unknown);
+            if (Build.SOC_MANUFACTURER == null && Build.SOC_MODEL == null){
+                return mContext.getString(R.string.unknown);
+            }
+            socManufacture = Build.SOC_MANUFACTURER;
+            socModel = Build.SOC_MODEL;
         }
         switch (socManufacture.toLowerCase(Locale.ROOT)) {
             case "qualcomm":
@@ -67,6 +72,9 @@ public class ExthmHardwareInfoPreferenceController extends BasePreferenceControl
                 break;
             case "mediatek":
                 socManufacture = mContext.getString(R.string.soc_model_mediatek);
+                break;
+            case "google":
+                socManufacture = mContext.getString(R.string.soc_model_google);
                 break;
             default:
                 if (socModel.startsWith("MT")) {

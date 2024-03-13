@@ -29,5 +29,6 @@
     <!-- SOC Manufacture -->
     <string name="soc_model_qualcomm">Qualcomm</string>
     <string name="soc_model_mediatek" translatable="false">MTK</string>
+    <string name="soc_model_google">Google</string>
 
 </resources>
