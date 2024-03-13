@@ -43,6 +43,7 @@ import com.android.settingslib.core.instrumentation.MetricsFeatureProvider;
 import com.android.settingslib.core.lifecycle.LifecycleObserver;
 import com.android.settingslib.core.lifecycle.events.OnStart;
 import com.android.settingslib.development.DevelopmentSettingsEnabler;
+import com.android.settingslib.utils.StringUtil;
 import com.google.android.setupcompat.util.WizardManagerHelper;
 
 public class ExthmDisplayVersionPreferenceController extends BasePreferenceController implements
@@ -174,9 +175,8 @@ public class ExthmDisplayVersionPreferenceController extends BasePreferenceContr
                     mDevHitToast.cancel();
                 }
                 mDevHitToast = Toast.makeText(mContext,
-                        mContext.getResources().getQuantityString(
-                                R.plurals.show_dev_countdown, mDevHitCountdown,
-                                mDevHitCountdown),
+                        StringUtil.getIcuPluralsString(mContext, mDevHitCountdown,
+                                R.string.show_dev_countdown),
                         Toast.LENGTH_SHORT);
                 mDevHitToast.show();
             }
