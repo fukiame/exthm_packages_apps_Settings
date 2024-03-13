@@ -13,6 +13,7 @@ import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.core.lifecycle.Lifecycle;
 import com.android.settingslib.search.SearchIndexable;
 
+import org.exthmui.settings.deviceinfo.firmwareversion.ExthmDisplayVersionPreferenceController;
 import org.exthmui.settings.deviceinfo.hardwareinfo.ExthmHardwareInfoPreferenceController;
 
 import java.util.ArrayList;
