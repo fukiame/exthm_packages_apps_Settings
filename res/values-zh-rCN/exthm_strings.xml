@@ -18,6 +18,7 @@
     <string name="max_refresh_rate_title">最大刷新率</string>
 
     <!-- My Device -->
+    <string name="device_status">"状态信息"</string>
     <string name="exthm_settings_my_device_title">我的设备</string>
     <string name="exthm_settings_my_device_exthm_version_title">exTHmUI 版本</string>
     <string name="exthm_settings_my_device_display_version_title">版本号</string>

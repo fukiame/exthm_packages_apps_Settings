@@ -18,6 +18,7 @@
     <string name="max_refresh_rate_title">Maximum refresh rate</string>
 
     <!-- My Device -->
+    <string name="device_status">Status</string>
     <string name="exthm_settings_my_device_title">My device</string>
     <string name="exthm_settings_my_device_exthm_version_title">exTHmUI Version</string>
     <string name="exthm_settings_my_device_display_version_title">Version</string>
