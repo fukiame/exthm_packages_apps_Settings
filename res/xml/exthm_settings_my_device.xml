@@ -18,7 +18,7 @@
     android:key="my_device_pref_screen"
     android:title="@string/exthm_settings_my_device_title">
 
-    <PreferenceScreen
+    <com.android.settingslib.widget.LayoutPreference
         android:key="exthm_logo"
         android:layout="@layout/exthm_logo"
         android:selectable="false" />
