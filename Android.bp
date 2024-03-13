@@ -49,7 +49,7 @@ android_library {
     name: "Settings-core",
     platform_apis: true,
     defaults: [
-        "SettingsLibDefaults",
+        "ExthmSettingsLibDefaults",
         "SettingsLib-search-defaults",
         "SpaPrivilegedLib-defaults",
     ],
