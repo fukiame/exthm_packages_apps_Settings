@@ -17,6 +17,10 @@
     <string name="min_refresh_rate_title">Minimum refresh rate</string>
     <string name="max_refresh_rate_title">Maximum refresh rate</string>
 
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="three_finger_gesture">Swipe to screenshot</string>
+    <string name="three_finger_gesture_summary">Swipe down with three fingers to take a screenshot</string>
+
     <!-- My Device -->
     <string name="device_status">Status</string>
     <string name="exthm_settings_my_device_title">My device</string>
