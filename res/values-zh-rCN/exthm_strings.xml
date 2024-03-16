@@ -17,6 +17,10 @@
     <string name="min_refresh_rate_title">最小刷新率</string>
     <string name="max_refresh_rate_title">最大刷新率</string>
 
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="three_finger_gesture">滑动截屏</string>
+    <string name="three_finger_gesture_summary">三指同时下滑以截取屏幕内容</string>
+
     <!-- My Device -->
     <string name="device_status">"状态信息"</string>
     <string name="exthm_settings_my_device_title">我的设备</string>
